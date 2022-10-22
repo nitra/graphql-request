@@ -1,0 +1,25 @@
+{
+  "name": "@nitra/graphql-request",
+  "description": "Graphql Request helper",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "nitra",
+    "graphql-request"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitra/graphql-request.git"
+  },
+  "bugs": "https://github.com/nitra/graphql-request/issues",
+  "homepage": "https://github.com/nitra/graphql-request",
+  "license": "MIT",
+  "dependencies": {
+    "@nitra/check-env": "^2.0.7",
+    "graphql-request": "^5.0.0"
+  }
+}
