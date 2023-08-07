@@ -18,16 +18,8 @@ jobs:
           # Full git history is needed to get a proper list of changed files within `super-linter` and for Changelog
           fetch-depth: 0
 
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          access: public
-          check-version: true
-          package: ./npm/package.json
+      - name: publish
+        run: npx @jsdevtools/npm-publish --token=${{ secrets.NPM_TOKEN }} npm/package.json
 
       - name: get-npm-version
         id: package-version
