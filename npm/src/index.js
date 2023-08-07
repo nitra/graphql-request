@@ -6,6 +6,7 @@ checkEnv(['QL', 'X_HASURA_ADMIN_SECRET'])
 export { gql }
 
 export const graphQLClient = new GraphQLClient(process.env.QL, {
+  fetch,
   headers: {
     'X-Hasura-Admin-Secret': process.env.X_HASURA_ADMIN_SECRET
   }
