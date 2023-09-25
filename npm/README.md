@@ -1,1 +1,1 @@
-# @nitra/fastify
+# @nitra/graphql-request
