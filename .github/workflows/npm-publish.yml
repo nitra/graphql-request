@@ -32,6 +32,8 @@ jobs:
           to-tag: HEAD
           allow-unknown: true
 
+      - run: cp npm/package.json .
+
       - name: 🛎️ Create release
         uses: ncipollo/release-action@v1
         with:
