@@ -22,5 +22,8 @@
     "@nitra/check-env": "^3.2.0",
     "graphql": "^16.8.2",
     "graphql-request": "^7.0.1"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
