@@ -9,4 +9,5 @@ export const graphQLClient = new GraphQLClient(env.QL, {
     'X-Hasura-Admin-Secret': env.X_HASURA_ADMIN_SECRET
   }
 })
-export { GraphQLClient, gql } from 'graphql-request'
+export { GraphQLError } from 'graphql'
+export { gql, GraphQLClient } from 'graphql-request'
